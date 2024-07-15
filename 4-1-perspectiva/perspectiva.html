@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="mimeomia">
+    <meta name="keywords" content="portafolio, diseno, web, fotografia, diseno grafico">
+    <meta name="description" content="Pagina en la que muestro mis fotos para mi protafolio profesinal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/image-favicon.svg">
+    <link rel="preload" href="./font/bitter-v33-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/fira-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/oswald-v53-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="./script/script.js" defer></script>
+
+    <title> Foto - Perspectiva </title>
+</head>
+
+<body>
+
+    <!-- Aqui comienza el header: 
+        1. Contara con una barra superior con el navegador, de los topicos principales de la pagina que desplegarán un submenu que funciona por medio de click 
+        para que sea funcional en version de escritorio y de movil. Ademas, botones que ayudaran a interactuar con la pagina: buscador y RRSS.-->
+    <header class="header">
+
+            <!-- Esta es la barra del navedador:
+                - menu desplegable en dos partes
+                - buscador -->
+            <div class="contenedor__barraNavegador" id="inicio">
+                
+                <!-- Contenedor del logo -->
+            
+                <a href="../index.html" class="logo" title="logo del sitio y boton al home"> MIMEOMIA </a>
+    
+                <!-- Contenedor del navegador principal -->
+                <div class="contenedor__navegador">
+    
+                    <nav class="navegador">
+    
+                        <button type="button" class="menu__barra" id="barra__menu" title="menu hamburguesa">
+                            <i class="fa-solid fa-bars boton__responsive"></i>
+                        </button>
+    
+                        <ul class="navegador__lista" id="listaCompleta">
+    
+                            <!-- Navegador principal  -->
+                            <li class="navegador__elementoLista"><a class="navegador__link" href="../index.html" target="_self" title="Ir al home">Inicio</a></li>
+                            <li class="navegador__elementoLista"><a class="navegador__link"  href="../index.html#sobreMi" title="Ir a sobre mi"> Sobre mi </a></li>
+                            
+                            <!-- Boton desplegable 1 -->
+                            <li class="navegador__elementoLista"><a class="navegador__link" id="botonDiseno" href="#" title="Despliga menu de diseño">
+                                Diseño <i class="fa-solid fa-chevron-down navegador__fecha"></i>
+                            
+                                <!-- Submenu desplegable 1 -->
+                                <ol class="navegador__sublista navegador__sublistaDiseno" id="sublistaDiseno">
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" title="Ir a branding"> Branding </a></li>
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" title="Ir a ux"> UX </a></li>
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45724359/Proyecto-personal-que-busca-hacer-un-homenaje" target="_blank" title="Ir a video">Video</a></li>
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45718919/KARTON" target="_blank" title="Ir a web">Web</a></li>
+                                </ol> 
+                            </li>
+    
+                            <!-- Vuelvo al navegador principal -->
+                            <li class="navegador__elementoLista"><a class="navegador__link" href="../3-playlist/pagPlaylist.html" title="Ir a la playlist">Playlist</a></li>
+                            
+                            <!-- Boton desplegable 2 -->
+                            <li class="navegador__elementoLista"><a class="navegador__link navegador__link--in" id="botonFoto" href="#" title="Ir a foto">
+                                Foto <i class="fa-solid fa-chevron-down navegador__fecha"></i>
+                                
+                                <!-- Submenu desplegable 2 -->
+                                <ol class="navegador__sublista navegador__sublistaFoto" id="sublistaFoto">
+                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="./perspectiva.html" title="Ir a perspectiva">Perspectiva</a></li>
+                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="../4-2-collage/collage.html" title="Ir a collage">Collage</a></li>
+                                </ol> 
+                            </a>
+                            </li>
+    
+                            <!-- Vuelvo al navegador principal -->
+                            <li class="navegador__elementoLista"><a class="navegador__link" href="../index.html#contactame" title="Ir a contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    
+                    </div>
+    
+                <!-- Contenedor de botones busqueda y RRSS -->
+                <div class="contenedor__botones">
+    
+                    <ul class="botones__lista">
+    
+                        <li class="botones__elementoLista">
+                            <a class="botones__link" href="#" id="boton__lupa" title="boton lupa">
+                                <i class="fa-solid fa-magnifying-glass botonIcon" ></i>
+                            </a>
+                        </li>
+    
+                        <li class="botones__elementoLista">
+                            <a class="botones__link" href="https://www.behance.net/paticarolina" target="_blank" title="Ir a behance">
+                                <i class="fa-brands fa-behance botonIcon"></i>
+                            </a>
+                        </li>
+    
+                        <li class="botones__elementoLista">
+                            <a class="botones__link" href="https://www.linkedin.com/in/patricia-riveram/" target="_blank" title="Ir a linkedin">
+                                <i class="fa-brands fa-linkedin-in botonIcon"></i>
+                            </a>
+                        </li>
+    
+                        <li class="botones__elementoLista">
+                            <a class="botones__link" href="https://www.instagram.com/mimeeeomia/" target="_blank" title="Ir a instagram">
+                                <i class="fa-brands fa-instagram botonIcon"></i>
+                          </a>
+                        </li>
+                    </ul>
+    
+                    <!-- Buscador del icono de la lupa -->
+                    <form action="#" method="get" class="botones_form" id="buscar">
+                        <input type="text" name="nombre" class="botones_input" id="cuadro__buscar" placeholder="   Buscar...">
+                    </form>
+    
+                </div>
+            </div>
+    </header>
+
+    <main class="main">
+
+   <!--  Esta es la unica y gran seccion de esta pag. El proposito es mostrar algunas de las fotos que he tomado, 
+    existiran dos tipos de fotos, una que cambian al hacerle hover a su color real y otras que permanecen en 
+    blanco y negro para respetar el argumento grafico escogido. -->
+        <section class="contenedor__total">
+
+            <div class="contenedorImg__texto">
+                <h2 class="titulo__main"> Perspectiva </h2>
+                <h3 class="subTitulo__main">
+                    Experimento sacando fotos de cosas, lugares y personas que me gustan o son 
+                    significativas para compartir.
+                </h3>
+            </div>
+
+            <div class="contenedor__Imgs1">
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--1">
+                    <img src="./img/b-n_collage-01.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-01.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                    </div>
+
+
+                </div>
+                
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--2">
+                    <img src="./img/b-n_collage-02.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-02.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--3">
+                    <img src="./img/b-n_collage-03.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--4">
+                    <img src="./img/b-n_collage-06.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-06.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                </div>
+                </div>
+            </div>
+
+            <div class="contenedor__Imgs2">
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--5">
+                    <img src="./img/b-n_collage-05.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-05.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--6">
+                    <img src="./img/b-n_collage-07.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--7">
+                    <img src="./img/b-n_collage-08.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-08.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--8">
+                    <img src="./img/b-n_collage-04.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                </div>
+
+                <div class="contenedor__imgFadeIn contenedor__imgFadeIn--9">
+                    <img src="./img/b-n_collage-09.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+
+                    <div class="contenedor__overlay">
+                        <img src="./img/collage-09.webp" alt="img1" class="contenedor__imagen" loading="lazy">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+
+   
+    <!-- Aqui comienza el footer. Estará dividido en 3 partes: 
+     - info general
+     - Navegador del footer
+     - Submit y redes sociales  -->
+    <footer class="footer">
+
+        <div class="contenedor__footer">
+            <div class="footer__tienda">
+                <a href="../index.html" class="logo" title="Ir al home"> MIMEOMIA </a>
+    
+                <div class="footerTienda__texto">
+                    <p class="footerTienda__parrafo footerTienda__parrafo--tienda">
+                        Proactiva, sociable, creativa, responsable, puntual, emprendedora, trabajo individual o grupal, resolutiva.
+                    </p>
+                    <p class="footerTienda__parrafo">
+                        Patricia Rivera / (+34) 607 377 098 / paticarolina59@gmail.com
+                    </p>
+                </div>
+            </div>
+    
+            <div class="footer__navegador">
+                <div class="footerNavegador__categorias">
+                    <ul class="footer__lista"> Diseño
+                        <li class="footer__elementoLista"><a href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" class="footer__link" title="Ir a branding"> Branding </a></li>
+                        <li class="footer__elementoLista"><a href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" class="footer__link" title="Ir a ux"> UX </a></li>
+                        <li class="footer__elementoLista"><a href="https://www.behance.net/gallery/45724359/Proyecto-personal-que-busca-hacer-un-homenaje" target="_blank" class="footer__link" title="Ir a video"> Video </a></li>
+                        <li class="footer__elementoLista"><a href="https://www.behance.net/gallery/45718919/KARTON" target="_blank" class="footer__link" title="Ir a web"> Web </a></li>
+                    </ul>
+                </div>
+    
+                <div class="footerNavegador__categorias">
+                    <ul class="footer__lista"> Foto
+                        <li class="footer__elementoLista"><a href="./perspectiva.html" class="footer__link" title="Ir a perspectiva"> Perspectiva </a></li>
+                        <li class="footer__elementoLista"><a href="../4-2-collage/collage.html" class="footer__link" title="Ir a collage"> Collage </a></li>
+                    </ul>
+                </div>
+    
+                <div class="footerNavegador__categorias">
+                    <ul class="footer__lista"> Ayuda
+                        <li class="footer__elementoLista"><a href="https://www.linkedin.com/in/patricia-riveram/" class="footer__link" title="preguntas frecuentes" Preguntas Frecuentes </a></li>
+                        <li class="footer__elementoLista"><a href="../index.html#contactame" class="footer__link" title="Ir a contacto"> Contacto </a></li>
+                        <li class="footer__elementoLista"><a href="https://www.linkedin.com/in/patricia-riveram/" target="_blank" class="footer__link" title="Ir a punto de entrega"> Punto de entrega </a></li>
+                        <li class="footer__elementoLista"><a href="../index.html#sobreMi" class="footer__link" title="Ir a sobre mi"> Sobre Mi </a></li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="footer__suscribete">
+    
+                <h3 class="footerSuscribete__titulo"> Contáctame </h3>
+    
+                <div class="footerSuscribete__texto">
+                    <p class="footerSuscribete__parrafo">
+                        Si tienes cualquier duda y consulta
+                    </p>
+                </div>
+    
+                <div class="footerTienda__form">
+                    <div class="tiendaForm__contenedorInput">
+                        <form name="submit" action="mailto:paticarolina59@gmail.com?subject=Aplico asunto&body=Escribo para" method="get" enctype="multipart/form-data" class="footer__form">
+                            <input type="email" name="email" id="mail" class="footer__formInput" placeholder="Ingresa tu email..." required>
+                            <button type="submit" class="footer__formInputBoton" title="Enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="footerRRSS">
+    
+                    <li class="botones__elementoLista">
+                        <a class="botones__link" href="https://www.behance.net/paticarolina" target="_blank" title="Ir a behance">
+                        <i class="fa-brands fa-behance botonIcon"></i>
+                    </a>
+                    </li>
+    
+                    <li class="botones__elementoLista">
+                        <a class="botones__link" href="https://www.linkedin.com/in/patricia-riveram/" target="_blank" title="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in botonIcon"></i>
+                    </a>
+                    </li>
+    
+                    <li class="botones__elementoLista">
+                        <a class="botones__link" href="https://www.instagram.com/mimeeeomia/" target="_blank" title="Ir a instagram">
+                        <i class="fa-brands fa-instagram botonIcon"></i>
+                    </a>
+                    </li>
+                </div>
+    
+                <div class="footerDerechos">
+                    <p class="footerDerechos__texto">© MIMEOMIA 2024</p>
+                </div>
+    
+    
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
