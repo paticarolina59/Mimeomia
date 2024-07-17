@@ -31,8 +31,8 @@ function handleEvent ()
 
      //MAIN
      //Slice
-    let botonAdelante = document.getElementById('imagenAdelante');
-    botonAdelante.addEventListener(pasaImagen);
+    let pasaImagen = document.getElementById('imagenAdelante');
+    
 }
 
 // HEADER
