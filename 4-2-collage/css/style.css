@@ -428,7 +428,7 @@ span
 .contenedor__conceptos
 {
     display: flex;
-    justify-content: baseline;
+    justify-content:center;
     align-items: baseline;
 
     gap: 1rem;

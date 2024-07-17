@@ -32,10 +32,7 @@ function handleEvent ()
      //MAIN
      //Slice
     let botonAdelante = document.getElementById('imagenAdelante');
-    botonAdelante.addEventListener('click', pasaImagen);
-
-    let botonAtras = document.getElementById('imagenAtras');
-    botonAtras.addEventListener('click', atrasImagen);
+    botonAdelante.addEventListener(pasaImagen);
 }
 
 // HEADER
