@@ -308,6 +308,12 @@ body
     list-style-type: none;
 }
 
+.botonLupa
+{
+    background-color: transparent;
+    border: transparent;
+}
+
 
 .botonIcon
 {
@@ -397,34 +403,21 @@ body
 
 /* * MAIN * */
 
-
-@keyframes aparece
-{
-    from 
-    {
-        opacity: 0;
-        transform: scale(0.4);;
-    }
-
-    to 
-    {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 /* Cambios generales en el Main */
 
-section
+/* Animacion de entrada */
+/* ref: https://www.youtube.com/watch?v=peFOHcbEUig */
+.section
 {
-    view-timeline-name: --section;
-    view-timeline-axis: block;
-    animation-timeline: --section;
-    animation-name: aparece;
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform 1s ease;
+}
 
-    /* FUENTE: https://www.youtube.com/watch?v=AbCYziNyjvk&ab_channel=midudev */
+.section.show
+{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .titulo__main
@@ -466,8 +459,6 @@ span
     margin: 5rem 0 5rem 0;
 
     font-family: var(--tipografiaTexto);
-
-    animation: aparece 1s ease-in forwards;
 }
 
 .contenedor__holaQuienSoy
