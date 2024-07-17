@@ -308,6 +308,12 @@ body
     list-style-type: none;
 }
 
+.botonLupa
+{
+    background-color: transparent;
+    border: transparent;
+}
+
 
 .botonIcon
 {

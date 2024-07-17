@@ -188,6 +188,12 @@ body
     text-align: center;
 }
 
+.botonLupa
+{
+    background-color: transparent;
+    border: transparent;
+}
+
 .navegador__link
 {
     text-decoration: none;
@@ -350,35 +356,21 @@ body
 
 
 /* * MAIN */
-/* Seccion */
+/* Cambios generales*/
 
-@keyframes aparece
+/* Animacion de entrada */
+/* ref: https://www.youtube.com/watch?v=peFOHcbEUig */
+.section
 {
-    from 
-    {
-        opacity: 0;
-        transform: scale(0.4);;
-    }
-
-    to 
-    {
-        opacity: 1;
-        transform: scale(1);
-    }
+    transform: scale(0.4);
+    opacity: 0;
+    transition: transform 1s ease;
 }
 
-/* Cambios generales en el Main */
-
-section
+.section.show
 {
-    view-timeline-name: --section;
-    view-timeline-axis: block;
-    animation-timeline: --section;
-    animation-name: aparece;
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-
-    /* FUENTE: https://www.youtube.com/watch?v=AbCYziNyjvk&ab_channel=midudev */
+    opacity: 1;
+    transform: scale(1);
 }
 
 .titulo__main

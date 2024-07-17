@@ -102,3 +102,30 @@ function desapareceBusqueda ()
 }
 
 window.onload = handleEvent;
+
+
+// Animacion de secciones
+
+let boxes = document.querySelectorAll ('section');
+
+checkBoxes();
+
+function checkBoxes ()
+{
+    let triggerBotton = window.innerHeight / 5 * 4;
+
+    boxes.forEach((section) => {
+        let sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < triggerBotton)
+        {
+            section.classList.add('show')
+        }
+        else
+        {
+            section.classList.remove('show')
+        }
+    });
+}
+
+window.addEventListener('scroll', checkBoxes)
