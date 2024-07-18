@@ -49,6 +49,7 @@ body
     width: 100vw;
 
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* * HEADER */
